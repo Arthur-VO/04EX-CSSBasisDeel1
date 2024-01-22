@@ -3,13 +3,18 @@ dat niet aanwezig is gebruik Helvetica. Sluit of met een
 generieke font family.
  */
 
-
+* {
+    font-family: Arial Narrow, Helvetica, serif;
+}
 
 
 /* Alle div's hebben een hoogte (height) van 100 pixels en de 
 achtergrondkleur is indianred. */
 
-
+div {
+    height: 100px;
+    background-color: indianred;
+}
 
 
 
@@ -17,7 +22,11 @@ achtergrondkleur is indianred. */
 /* Stel de ster (map images) in als achtergrondafbeelding 
 voor de eerste div. De ster moet gecentreerd worden. */
 
-
+div#box-with-star {
+    background-image: url(../images/star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
@@ -26,7 +35,9 @@ voor de eerste div. De ster moet gecentreerd worden. */
      linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 131, 147, 1) 0%, rgba(9, 9, 121, 1) 100%); 
 */
 
-
+div#box-with-gradient {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 131, 147, 1) 1%, rgba(9, 9, 121, 1) 100%);
+}
 
 
 
